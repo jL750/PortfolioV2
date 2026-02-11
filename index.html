@@ -715,81 +715,67 @@
             observer.observe(el);
         });
 
-        // FORMULAIRE DE CONTACT FONCTIONNEL
+                // FORMULAIRE DE CONTACT - Version GitHub Pages (SANS MODIFIER LE CSS)
         document.getElementById('contactForm').addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            const form = this;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
             const formStatus = document.getElementById('formStatus');
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalBtnText = submitBtn.innerHTML;
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
             
-            // Récupérer les données du formulaire
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Validation basique
-            if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-                showFormStatus('Veuillez remplir tous les champs obligatoires.', 'error');
+            // Validation
+            if (!name || !email || !subject || !message) {
+                formStatus.textContent = 'Veuillez remplir tous les champs obligatoires.';
+                formStatus.className = 'form-status error';
                 return;
             }
             
-            // Désactiver le bouton pendant l'envoi
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+            // Désactiver le bouton
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Préparation...';
             submitBtn.disabled = true;
             
+            // Préparer le message pour email
+            const emailBody = `Nom: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message.replace(/\n/g, '%0A')}`;
+            const emailSubject = encodeURIComponent(`Contact Portfolio - ${subject}`);
+            
+            // Tenter de copier dans le presse-papier
             try {
-                // Simuler un envoi
-                await simulateFormSubmit(formData);
+                await navigator.clipboard.writeText(
+                    `Nom: ${name}\nEmail: ${email}\nSujet: ${subject}\nMessage: ${message}`
+                );
                 
-                // Afficher le succès
-                showFormStatus('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.', 'success');
+                // Ouvrir le client email
+                window.location.href = `mailto:johan.li@outlook.fr?subject=${emailSubject}&body=${emailBody}`;
+                
+                formStatus.textContent = '✓ Message copié ! Votre client email s\'est ouvert.';
+                formStatus.className = 'form-status success';
                 
                 // Réinitialiser le formulaire
-                form.reset();
+                this.reset();
                 
-            } catch (error) {
-                // Afficher l'erreur
-                showFormStatus('Erreur lors de l\'envoi du message. Veuillez réessayer.', 'error');
-                console.error('Erreur:', error);
+            } catch (err) {
+                // Si la copie échoue, ouvrir quand même l'email
+                window.location.href = `mailto:johan.li@outlook.fr?subject=${emailSubject}&body=${emailBody}`;
                 
-            } finally {
-                // Réactiver le bouton
-                submitBtn.innerHTML = originalBtnText;
-                submitBtn.disabled = false;
+                formStatus.textContent = '✓ Votre client email s\'est ouvert. Envoyez le message directement.';
+                formStatus.className = 'form-status success';
+                
+                this.reset();
             }
-        });
-
-        // Fonction pour simuler l'envoi du formulaire
-        function simulateFormSubmit(data) {
-            return new Promise((resolve) => {
-                setTimeout(() => {
-                    // Simulation d'envoi réussi
-                    console.log('Message envoyé:', data);
-                    resolve();
-                }, 1500);
-            });
-        }
-
-        // Fonction pour afficher le statut du formulaire
-        function showFormStatus(message, type) {
-            const formStatus = document.getElementById('formStatus');
-            formStatus.textContent = message;
-            formStatus.className = 'form-status ' + type;
             
-            // Masquer le message après 5 secondes
+            // Réactiver le bouton
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            
+            // Effacer le message après 5 secondes
             setTimeout(() => {
-                formStatus.style.opacity = '0';
-                setTimeout(() => {
-                    formStatus.className = 'form-status';
-                    formStatus.style.opacity = '1';
-                }, 300);
+                formStatus.className = 'form-status';
             }, 5000);
-        }
+        });
     </script>
 </body>
 </html>
