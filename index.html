@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Li Johan - Développeur Full-Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">Li Johan</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#realisations">Réalisations</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-availability">Disponible pour alternance • Master 2026/2028</div>
+                    <h1 class="hero-title">
+                        <span>Li Johan</span>
+                        <span class="highlight">Développeur Full-Stack</span>
+                    </h1>
+                    <div class="hero-subtitle">Architecte d'expériences digitales</div>
+                    <p class="hero-description">
+                        Spécialisé dans la création d'applications web et mobiles performantes avec React.js, React Native et C# .NET. Passionné par l'innovation et les architectures élégantes.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">12</span>
+                            <span class="hero-stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">6</span>
+                            <span class="hero-stat-label">Technologies maîtrisées</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="hero-stat-number">2+</span>
+                            <span class="hero-stat-label">Années d'expérience</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#realisations" class="btn">
+                            <i class="fas fa-code"></i> Voir mes projets
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i> Me contacter
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="hero-gif">
+                        <img src="image/dev.gif" alt="Animation développement">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 01. PRÉSENTATION - AVEC PHOTO RONDE -->
+    <section id="presentation">
+        <div class="container">
+            <div class="section-header">01. Présentation</div>
+            <h2 class="section-title">À propos de moi</h2>
+            
+            <div class="about-container">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3><i class="fas fa-hand-sparkles"></i> Bonjour, je suis Johan</h3>
+                        <p>Développeur Full-Stack passionné actuellement en formation BAC+3 Concepteur Développeur d'Applications, je transforme des idées complexes en applications élégantes et performantes.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-road"></i> Mon parcours</h3>
+                        <p>Après l'obtention de mon BTS SIO option SLAM en 2025, j'ai approfondi mes compétences en architecture logicielle, développement web et méthodes agiles. Je me suis spécialisé dans la création de solutions digitales complètes avec des technologies modernes.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-lightbulb"></i> Ma philosophie</h3>
+                        <p>Je crois fermement en l'importance du Clean Code, de l'accessibilité et de l'expérience utilisateur. Chaque ligne de code que j'écris vise la simplicité, la maintenabilité et l'excellence technique.</p>
+                    </div>
+                </div>
+                
+                <div class="about-details">
+                    <div class="profile-image-container">
+                        <div class="profile-image-wrapper">
+                            <img src="image/IMG_9550.jpg" alt="Li Johan" class="profile-image">
+                        </div>
+                    </div>
+                    
+                    <div class="details-grid">
+    <div class="detail-item">
+        <h4>Formation</h4>
+        <p>BAC+3 Concepteur Développeur d'Applications</p>
+    </div>
+    
+    <div class="detail-item">
+        <h4>Localisation</h4>
+        <p>Île-de-France, France</p>
+    </div>
+    
+    <div class="detail-item">
+        <h4>Statut</h4>
+        <p>Recherche alternance</p>
+    </div>
+    
+    <!-- AJOUTE ICI LE LIEN POUR TÉLÉCHARGER LE CV -->
+    <div class="detail-item">
+        <h4>Télécharger mon CV</h4>
+        <p>Consultez mon parcours détaillé</p>
+        <a href="image/CVAlternance.pdf" class="btn btn-sm" download="CV_Li_Johan.pdf" style="margin-top: 10px; display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fas fa-download"></i> Télécharger CV
+        </a>
+    </div>
+    
+    <div class="key-skills">
+        <h4>Compétences clés</h4>
+        <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">React Native</span>
+            <span class="skill-tag">C# .NET</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">MySQL</span>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 02. DOMAINES D'EXPERTISE -->
+    <section id="expertise">
+        <div class="container">
+            <div class="section-header">02. Domaines d'expertise</div>
+            <h2 class="section-title">Ce que je fais</h2>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3><i class="fas fa-code"></i> Développement Frontend</h3>
+                    <p>Création d'interfaces utilisateur modernes et réactives avec React.js. Maîtrise des hooks, Context API, et optimisation des performances.</p>
+                    <ul class="expertise-list">
+                        <li>React.js</li>
+                        <li>JavaScript</li>
+                        <li>HTML5 / CSS3 / SASS</li>
+                        <li>Responsive Design</li>
+                        <li>Animations CSS</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3><i class="fas fa-server"></i> Développement Backend</h3>
+                    <p>Conception d'APIs REST robustes et sécurisées avec C# .NET et Node.js. Architecture en couches et principes SOLID.</p>
+                    <ul class="expertise-list">
+                        <li>C# .NET 8 & ASP.NET Core</li>
+                        <li>Entity Framework</li>
+                        <li>Node.js & Express</li>
+                        <li>API REST</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3><i class="fas fa-mobile-alt"></i> Développement Mobile</h3>
+                    <p>Applications mobiles cross-platform avec React Native et Expo. Navigation, gestion d'état et optimisation mobile.</p>
+                    <ul class="expertise-list">
+                        <li>React Native & Expo</li>
+                        <li>Navigation (React Navigation)</li>
+                        <li>Gestion d'état (Redux/Context)</li>
+                        <li>APIs natives & Push Notifications</li>
+                        <li>Performances & Optimisation</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3><i class="fas fa-database"></i> Bases de Données</h3>
+                    <p>Conception et gestion de bases de données relationnelles et NoSQL. Optimisation des requêtes et modélisation des données.</p>
+                    <ul class="expertise-list">
+                        <li>MySQL & SQL Server</li>
+                        <li>MongoDB & Firebase</li>
+                        <li>Modélisation UML</li>
+                        <li>Migrations </li>
+                        <li>Optimisation</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3><i class="fas fa-tasks"></i> Méthodes Agiles</h3>
+                    <p>Expérience pratique avec Scrum : sprints, daily meetings, rétrospectives et gestion de backlog.</p>
+                    <ul class="expertise-list">
+                        <li>Scrum</li>
+                        <li>User Stories & Backlog</li>
+                        <li>Sprint Planning</li>
+                        <li>Trello</li>
+                        <li>Code Reviews</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3><i class="fas fa-tools"></i> DevOps & Versionning</h3>
+                    <p>Gestion de version avec Git, workflows collaboratifs, CI/CD et déploiement continu.</p>
+                    <ul class="expertise-list">
+                        <li>Git & GitHub/GitLab</li>
+                        <li>Git Flow & Branching</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Docker (bases)</li>
+                        <li>Déploiement Cloud</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 03. RÉALISATIONS - AVEC TOUS VOS PROJETS ET IMAGES -->
+    <section id="realisations">
+        <div class="container">
+            <div class="section-header">03. Réalisations</div>
+            <h2 class="section-title">Mes projets</h2>
+            
+            <div class="projects-grid">
+                 <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/React.png" alt="Application E-commerce Mobile" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type ecommerce">Projet React en cours</div>
+                       <h3>TechShop - E-commerce High-Tech</h3>
+                         <p>Plateforme e-commerce spécialisée dans la vente de produits high-tech : smartphones (iPhone, Samsung), écouteurs sans fil (AirPods, Galaxy Buds), montres connectées (Apple Watch, Galaxy Watch) et accessoires. Développée avec React et Node.js, l'application propose une expérience d'achat fluide avec panier dynamique et paiement sécurisé.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node</span>
+                            <span class="tech-tag">MongoDB</span>
+                             <span class="tech-tag">DevOps</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/React-Web-Front" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Frontend
+                            </a>
+                             <a href="https://github.com/jL750/React-Web-Back-end" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> Backend
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/PortfolioV2.PNG" alt="Portfolio Professionnel" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type frontend">Web Design</div>
+                        <h3>Portfolio Professionnel 2026</h3>
+                        <p>Portfolio moderne et interactif présentant mes projets et compétences. Design responsive avec animations CSS avancées et optimisation SEO.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Design moderne</span>
+                            <span class="project-tag">Animations fluides</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/portfolio" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://github.com/jL750/portfolio" class="btn btn-sm btn-outline" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Voir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 1 : Application E-commerce Mobile -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/Mobile.png" alt="Application E-commerce Mobile" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type ecommerce">Projet Mobile</div>
+                        <h3>Application E-commerce Mobile</h3>
+                        <p>Application mobile complète développée avec React Native permettant la navigation de produits, gestion du panier, paiement sécurisé et suivi de commandes. Synchronisation en temps réel avec Firebase et notifications push.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">React Navigation</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/Projet-React-Native" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Projet 2 : Site e-commerce en cours -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/" alt="Site e-commerce en cours" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type backend">API REST</div>
+                        <h3>API REST Gestion d'Inventaire</h3>
+                        <p>API REST complète avec C# .NET 8 pour la gestion d'inventaire. Architecture en couches, authentification JWT, documentation Swagger et tests unitaires avec xUnit.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Tests unitaires</span>
+                            <span class="project-tag">Documentation</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">C# .NET 8</span>
+                            <span class="tech-tag">Entity Framework</span>
+                            <span class="tech-tag">SQL Server</span>
+                           
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/api-inventory" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 : Dashboard Admin React -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/devops.png" alt="Dashboard Admin" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type frontend">Dashboard Admin</div>
+                        <h3>Dashboard Admin React</h3>
+                        <p>Tableau de bord administrateur moderne avec React.js. Visualisation de données avec Recharts, filtres dynamiques, export CSV, mode sombre et gestion des utilisateurs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Graphiques interactifs</span>
+                            <span class="project-tag">Mode sombre</span>
+                            <span class="project-tag">Export données</span>
+                            <span class="project-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Material-UI</span>
+                            <span class="tech-tag">Axios</span>
+                            <span class="tech-tag">Context API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/admin-dashboard" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 : Portfolio Professionnel -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/PortfolioV1.PNG" alt="Portfolio Professionnel" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type frontend">Web Design</div>
+                        <h3>Portfolio Professionnel BTS</h3>
+                        <p>Portfolio moderne et interactif présentant mes projets et compétences. Design responsive avec animations CSS avancées et optimisation SEO.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Design moderne</span>
+                            <span class="project-tag">Animations fluides</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/portfolio" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://github.com/jL750/portfolio" class="btn btn-sm btn-outline" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Voir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/e-commerce.png" alt="Dashboard Admin" class="project-image">
+                    </div>
+                    <div class="project-content">
+    <div class="project-type ecommerce">Site E-Commerce</div>
+    <h3>AutoMarket - Vente de véhicules d'occasion</h3>
+    <p>Plateforme e-commerce complète pour l'achat et la vente de véhicules d'occasion. Développée avec PHP et MySQL, elle permet l'annonce de voitures, recherche multicritères (marque, modèle, année, prix, kilométrage), gestion des annonces, espace vendeur/acheteur, système de paiement sécurisé avec Stripe et messagerie intégrée.</p>
+
+    <div class="project-tech">
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">PHP</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">Stripe API</span>
+    </div>
+    <div class="project-links">
+        <a href="https://github.com/jL750/automarket" class="btn btn-sm" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+         <a href="https://urlr.me/XV5pdr" class="btn btn-sm btn-outline" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Voir
+                            </a>
+    </div>
+</div>
+                </div>
+                <!-- Projet 5 : Interface Administrateur (votre ancien projet) -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="image/cadmin.png" alt="Interface Administrateur" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-type backend">Interface administrateur</div>
+                        <h3>Interface Administrateur</h3>
+                        <p>Back-office complet pour la gestion de contenu avec tableau de bord, statistiques et gestion des utilisateurs.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Tableau de bord</span>
+                            <span class="project-tag">Gestion des utilisateurs</span>
+                            <span class="project-tag">Statistiques</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">C# .NET8</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jL750/admin-interface" class="btn btn-sm" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://urlr.me/XV5pdr" class="btn btn-sm btn-outline" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Voir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 04. TECHNOLOGIES - MISE À JOUR -->
+    <section id="technologies">
+        <div class="container">
+            <div class="section-header">04. Technologies</div>
+            <h2 class="section-title">Ma stack technique</h2>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="image/React.png" alt="React.js" class="tech-icon">
+                            <span class="tech-name">React.js</span>
+                            <span class="tech-level advanced">Avancé</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/JavaScript.png" alt="JavaScript" class="tech-icon">
+                            <span class="tech-name">JavaScript</span>
+                             <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/HTML5.png" alt="HTML5" class="tech-icon">
+                            <span class="tech-name">HTML5</span>
+                            <span class="tech-level advanced">Avancé</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/CSS3.png" alt="CSS3" class="tech-icon">
+                            <span class="tech-name">CSS3</span>
+                            <span class="tech-level advanced">Avancé</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="image/Csharp.png" alt="C# .NET" class="tech-icon">
+                            <span class="tech-name">C# .NET</span>
+                           <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/Nodejs.png" alt="Node.js" class="tech-icon">
+                            <span class="tech-name">Node.js</span>
+                            <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/PHP.png" alt="PHP" class="tech-icon">
+                            <span class="tech-name">PHP</span>
+                            <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/MySql.png" alt="MySQL" class="tech-icon">
+                            <span class="tech-name">MySQL</span>
+                             <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Mobile</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="image/ReactNative.png" alt="React Native" class="tech-icon">
+                            <span class="tech-name">React Native</span>
+                             <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/Expo.png" alt="Expo" class="tech-icon">
+                            <span class="tech-name">Expo</span>
+                            <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Outils & Workflow</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <img src="image/Git.png" alt="Git" class="tech-icon">
+                            <span class="tech-name">Git</span>
+                             <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="image/GitHub.png" alt="GitHub" class="tech-icon">
+                            <span class="tech-name">GitHub</span>
+                             <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="tech-item">
+                            <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-code" style="font-size: 1.2rem; color: var(--accent);"></i>
+                            </div>
+                            <span class="tech-name">VS Code</span>
+                            <span class="tech-level advanced">Avancé</span>
+                        </div>
+                        <div class="tech-item">
+                            <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-tasks" style="font-size: 1.2rem; color: var(--accent);"></i>
+                            </div>
+                            <span class="tech-name">Scrum</span>
+                            <span class="tech-level intermediate">Intermédiaire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">05. Contact</div>
+            <h2 class="section-title">Contactez-moi</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Je suis actuellement à la recherche d'une alternance pour 2025. Si vous cherchez un développeur motivé et passionné, n'hésitez pas à me contacter !</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <div>johan.li@outlook.fr</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Localisation</strong>
+                                <div>Île-de-France, France</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <a href="https://www.linkedin.com/in/johan-l-0650b7345/" class="btn btn-sm" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/jL750" class="btn btn-sm btn-outline" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div id="formStatus" class="form-status"></div>
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Portfolio Li Johan - Développeur Full-Stack. Tous droits réservés.</p>
+            <p style="margin-top: 10px; color: var(--accent);">Disponible pour alternance • BTS SIO 2025</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Menu Burger
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        const burgerIcon = burger.querySelector('i');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burgerIcon.classList.toggle('fa-bars');
+            burgerIcon.classList.toggle('fa-times');
+        });
+
+        // Fermer le menu au clic sur un lien
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                burgerIcon.classList.remove('fa-times');
+                burgerIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Animation au scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les sections et cartes
+        document.querySelectorAll('section, .about-card, .expertise-card, .project-card, .tech-category').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // FORMULAIRE DE CONTACT FONCTIONNEL
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = this;
+            const formStatus = document.getElementById('formStatus');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            // Récupérer les données du formulaire
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Validation basique
+            if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+                showFormStatus('Veuillez remplir tous les champs obligatoires.', 'error');
+                return;
+            }
+            
+            // Désactiver le bouton pendant l'envoi
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            try {
+                // Simuler un envoi
+                await simulateFormSubmit(formData);
+                
+                // Afficher le succès
+                showFormStatus('Message envoyé avec succès ! Je vous répondrai dans les plus brefs délais.', 'success');
+                
+                // Réinitialiser le formulaire
+                form.reset();
+                
+            } catch (error) {
+                // Afficher l'erreur
+                showFormStatus('Erreur lors de l\'envoi du message. Veuillez réessayer.', 'error');
+                console.error('Erreur:', error);
+                
+            } finally {
+                // Réactiver le bouton
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Fonction pour simuler l'envoi du formulaire
+        function simulateFormSubmit(data) {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    // Simulation d'envoi réussi
+                    console.log('Message envoyé:', data);
+                    resolve();
+                }, 1500);
+            });
+        }
+
+        // Fonction pour afficher le statut du formulaire
+        function showFormStatus(message, type) {
+            const formStatus = document.getElementById('formStatus');
+            formStatus.textContent = message;
+            formStatus.className = 'form-status ' + type;
+            
+            // Masquer le message après 5 secondes
+            setTimeout(() => {
+                formStatus.style.opacity = '0';
+                setTimeout(() => {
+                    formStatus.className = 'form-status';
+                    formStatus.style.opacity = '1';
+                }, 300);
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
